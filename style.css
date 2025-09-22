@@ -1,0 +1,21 @@
+/* Estilos generales para todo el cuerpo de la página */
+body {
+    background-color: #f0f2f5; /* Un color de fondo gris claro */
+    font-family: Arial, sans-serif; /* Una fuente estándar y legible */
+    color: #333; /* Color de texto oscuro */
+    line-height: 1.6;
+}
+
+h1 {
+    color: #0056b3; /* Un color azul para el encabezado principal */
+    text-align: center; /* Centrar el título */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto; /* Centrar el contenedor en la página */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border: 1px solid #ddd; /* Un borde sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Una sombra ligera para darle profundidad */
+}
