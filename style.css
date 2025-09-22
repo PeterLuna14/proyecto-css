@@ -1,21 +1,121 @@
-/* Estilos generales para todo el cuerpo de la página */
+/* Estilos generales */
 body {
-    background-color: #f0f2f5; /* Un color de fondo gris claro */
-    font-family: Arial, sans-serif; /* Una fuente estándar y legible */
-    color: #333; /* Color de texto oscuro */
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    color: #333;
     line-height: 1.6;
-}
-
-h1 {
-    color: #0056b3; /* Un color azul para el encabezado principal */
-    text-align: center; /* Centrar el título */
+    margin: 0;
 }
 
 .container {
-    width: 80%;
-    margin: 20px auto; /* Centrar el contenedor en la página */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* Fondo blanco para el contenedor */
-    border: 1px solid #ddd; /* Un borde sutil */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Una sombra ligera para darle profundidad */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Estilos para el encabezado principal */
+.main-header {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Contenedor para las tarjetas */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos de cada tarjeta */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #0056b3;
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }

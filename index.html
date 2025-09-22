@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-g">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto con CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenido a Mi Página Web</h1>
-    <p>Este es un párrafo de ejemplo para demostrar que los estilos CSS están funcionando.</p>
-    <div class="container">
-        <p>Este texto está dentro de un contenedor con estilo.</p>
-    </div>
+    <nav class="navbar">
+        <a href="#" class="logo">MiProyecto</a>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="main-header">
+        <h1>Propiedades Básicas de CSS en Acción</h1>
+        <p>Este proyecto demuestra cómo aplicar diferentes estilos para mejorar la apariencia de una página web.</p>
+    </header>
+
+    <main class="container">
+        <h2>Ejemplos de Estilos</h2>
+        <section class="cards-container">
+            <div class="card">
+                <h3>Colores y Fondos</h3>
+                <p>Uso de `background-color` para el fondo y `color` para el texto. ¡Mira qué bien se ve!</p>
+                <button class="btn">Saber más</button>
+            </div>
+            <div class="card">
+                <h3>Márgenes y Rellenos</h3>
+                <p>La propiedad `margin` crea espacio alrededor de un elemento, mientras que `padding` crea espacio adentro.</p>
+                <button class="btn">Saber más</button>
+            </div>
+            <div class="card">
+                <h3>Bordes y Sombras</h3>
+                <p>Con `border-radius` redondeamos las esquinas y con `box-shadow` añadimos una sombra sutil para dar profundidad.</p>
+                <button class="btn">Saber más</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 - Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
