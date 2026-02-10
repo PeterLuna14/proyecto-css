@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto con CSS</title>
+    <title>Proyecto CSS - Herencia y Refactorización</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">MiProyecto</a>
+        <a href="#" class="logo">Proyecto de Pedro Luna</a>
         <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre mí</a></li>
@@ -17,8 +17,8 @@
     </nav>
 
     <header class="main-header">
-        <h1>Propiedades Básicas de CSS en Acción</h1>
-        <p>Este proyecto demuestra cómo aplicar diferentes estilos para mejorar la apariencia de una página web.</p>
+        <h1>Propiedades de CSS y Herencia</h1>
+        <p>Mejorando la estructura y aplicando conceptos avanzados de estilos.</p>
     </header>
 
     <main class="container">
@@ -26,24 +26,32 @@
         <section class="cards-container">
             <div class="card">
                 <h3>Colores y Fondos</h3>
-                <p>Uso de `background-color` para el fondo y `color` para el texto. ¡Mira qué bien se ve!</p>
+                <p>Uso de background-color y color para mejorar la legibilidad.</p>
                 <button class="btn">Saber más</button>
             </div>
             <div class="card">
                 <h3>Márgenes y Rellenos</h3>
-                <p>La propiedad `margin` crea espacio alrededor de un elemento, mientras que `padding` crea espacio adentro.</p>
+                <p>Control del espacio interno (padding) y externo (margin).</p>
                 <button class="btn">Saber más</button>
             </div>
-            <div class="card">
-                <h3>Bordes y Sombras</h3>
-                <p>Con `border-radius` redondeamos las esquinas y con `box-shadow` añadimos una sombra sutil para dar profundidad.</p>
-                <button class="btn">Saber más</button>
+        </section>
+
+        <hr> <section id="seccion-herencia">
+            <h2>Demostración de Herencia en CSS</h2>
+            <div class="contenedor-padre">
+                <h3>Soy el Elemento Padre</h3>
+                <p>Este párrafo <strong>no tiene estilos propios</strong> en el CSS. Está heredando el color y la fuente directamente de su padre.</p>
+                <ul>
+                    <li>Hijo 1: Heredo el estilo naranja.</li>
+                    <li>Hijo 2: Yo también lo heredo.</li>
+                </ul>
+                <p class="hijo-rebelde">Yo soy un hijo "rebelde": aunque mi padre es naranja, yo decidí ser azul usando mi propia clase.</p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 - Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2026 - Pedro Luna. Estudiante de Desarrollo Web.</p>
     </footer>
 
 </body>
