@@ -3,73 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto CSS - Pedro Luna</title>
+    <title>Proyecto Integrador CSS - Pedro Luna</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav class="navbar">
-        <a href="#" class="logo">Proyecto de Pedro Luna</a>
-        <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+        <div class="logo">Pedro Luna Engineering</div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#herencia">Herencia</a>
+            <a href="#posiciones">Posiciones</a>
+            <a href="#flexbox">Flexbox</a>
+        </div>
+        <button class="login-button">Login</button>
     </nav>
 
-    <header class="main-header">
-        <h1>Propiedades de CSS, Herencia y Flexbox</h1>
-        <p>Evolución del proyecto paso a paso.</p>
+    <div class="sticky-note">
+        <p>📌 <strong>Nota:</strong> Proyecto Académico 2026 - Sistemas</p>
+    </div>
+
+    <header id="inicio" class="main-header">
+        <h1>Bitácora de Desarrollo CSS</h1>
+        <p>Estudiante: Pedro Luna | Ciudad de México</p>
     </header>
 
     <main class="container">
-        <section class="cards-container">
-            <div class="card">
-                <h3>Colores y Fondos</h3>
-                <p>Uso de background-color y color para mejorar la legibilidad.</p>
-                <button class="btn">Saber más</button>
-            </div>
-            <div class="card">
-                <h3>Márgenes y Rellenos</h3>
-                <p>Control del espacio interno (padding) y externo (margin).</p>
-                <button class="btn">Saber más</button>
+
+        <section class="section-box">
+            <h2>1. Fundamentos: Colores y Box Model</h2>
+            <div class="cards-container-flex">
+                <div class="card-basic color-demo">
+                    <h3>Colores y Fondos</h3>
+                    <p>Aplicación de contrastes para mejorar la legibilidad y accesibilidad.</p>
+                </div>
+                <div class="card-basic spacing-demo">
+                    <h3>Márgenes y Rellenos</h3>
+                    <p>Uso de padding y margin para dar aire a los elementos del diseño.</p>
+                </div>
             </div>
         </section>
 
         <hr>
 
-        <section id="seccion-herencia">
-            <h2>Demostración de Herencia en CSS</h2>
-            <div class="contenedor-padre">
-                <h3>Soy el Elemento Padre</h3>
-                <p>Este párrafo <strong>no tiene estilos propios</strong>. Hereda el color naranja del padre.</p>
+        <section id="herencia" class="section-box">
+            <h2>2. Mecánica de Herencia</h2>
+            <div class="contenedor-padre-naranja">
+                <h3>Contenedor Padre</h3>
+                <p>Este texto hereda el color naranja directamente de la regla del padre.</p>
                 <ul>
-                    <li>Hijo 1: Heredo el estilo naranja.</li>
-                    <li>Hijo 2: Yo también lo heredo.</li>
+                    <li>Hijo 1: Soy naranja por herencia.</li>
+                    <li>Hijo 2: Sigo siendo naranja.</li>
                 </ul>
-                <p class="hijo-rebelde">Yo soy un hijo "rebelde": decidí ser azul con mi propia clase.</p>
+                <p class="hijo-rebelde-azul">Excepción: Yo soy azul porque tengo mi propia clase.</p>
             </div>
         </section>
 
         <hr>
 
-        <section class="alignment-project">
-            <h2>Proyecto: Alineación con Flexbox</h2>
-            <p>Demostración de Centrado Total y Alineación Individual (Align-self).</p>
-
-            <div class="box-container centered">
-                <div class="item-align">Centrado Total</div>
-            </div>
-
-            <div class="box-container alignment-self">
-                <div class="item-align">Normal</div>
-                <div class="item-align rebel">Rebelde (End)</div>
-                <div class="item-align">Normal</div>
+        <section id="posiciones" class="section-box">
+            <h2>3. Laboratorio de Posicionamiento</h2>
+            <p>Implementación de capas basada en el diagrama de profundidad.</p>
+            <div class="position-container">
+                <div class="box box-relative">Relative (Movido del flujo)</div>
+                <div class="box box-absolute">Absolute (Anclado al padre)</div>
             </div>
         </section>
+
+        <hr>
+
+        <section id="flexbox" class="section-box">
+            <h2>4. Estructuras con Flexbox</h2>
+            <div class="flex-lab-container">
+                <div class="item-flex">Item 1</div>
+                <div class="item-flex item-rebel">Align-self (Rebelde)</div>
+                <div class="item-flex">Item 3</div>
+            </div>
+            <p class="caption">Centrado perfecto usando justify-content y align-items: center.</p>
+        </section>
+
+        <hr>
+
+        <section class="section-box">
+            <h2>5. Adaptabilidad (Responsive Design)</h2>
+            <div class="card-horizontal">
+                <img src="https://via.placeholder.com/150" alt="Producto" class="card-image">
+                <div class="card-description">
+                    <h3>Componente Adaptable</h3>
+                    <p>Cambio de dirección (row a column) según el ancho de la pantalla para móviles.</p>
+                    <button class="btn-primary">Ver Proyecto</button>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <div class="cookie-footer">
+        <p>Acepta las cookies para continuar en el sitio de Pedro Luna. <a href="#">Ver política</a>.</p>
+        <button class="cookie-accept">Aceptar</button>
+    </div>
+
     <footer class="footer">
-        <p>&copy; 2026 - Pedro Luna. Estudiante de Desarrollo Web.</p>
+        <p>&copy; 2026 - Pedro Luna. Ingeniería de Sistemas.</p>
     </footer>
 
 </body>
