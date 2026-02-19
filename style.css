@@ -1,11 +1,10 @@
 /* =========================================
-   1. ESTILOS BASE Y VARIABLES
+   1. ESTILOS BASE
    ========================================= */
 body {
     background-color: #f0f2f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    line-height: 1.6;
     margin: 0;
 }
 
@@ -13,11 +12,10 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
 }
 
 /* =========================================
-   2. COMPONENTES (Navbar, Header, Footer)
+   2. NAVBAR Y HEADER
    ========================================= */
 .navbar {
     background-color: #ffffff;
@@ -28,126 +26,103 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0056b3;
-    text-decoration: none;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li { margin-left: 20px; }
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    gap: 20px;
 }
 
 .main-header {
     background-color: #0056b3;
     color: #ffffff;
-    padding: 40px 20px;
+    padding: 30px;
     text-align: center;
-}
-
-.footer {
-    background-color: #333;
-    color: #f0f2f5;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
 }
 
 /* =========================================
-   3. TARJETAS (Cards) - Uso de Flexbox
+   3. CARDS (Flexbox Básico)
    ========================================= */
 .cards-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
     padding: 20px;
-    width: 280px;
-    text-align: center;
-}
-
-.btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* =========================================
-   4. DEMO FLEXBOX (Nueva Sección)
-   ========================================= */
-.flexbox-demo {
-    background-color: #e9ecef;
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.flex-container {
-    display: flex;             /* Activamos Flexbox */
-    flex-direction: row;       /* Elementos en fila */
-    justify-content: space-around; /* Distribuye espacio uniforme */
-    align-items: center;       /* Centra verticalmente */
-    background-color: #ffffff;
-    height: 150px;
     border-radius: 8px;
-    border: 2px dashed #007bff;
-    margin-top: 15px;
-}
-
-.flex-item {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
 }
 
 /* =========================================
-   5. SECCIÓN DE HERENCIA
+   4. SECCIÓN HERENCIA (Texto Naranja)
    ========================================= */
 #seccion-herencia {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 20px;
     border: 1px solid #ddd;
 }
 
 .contenedor-padre {
-    color: #d35400; 
-    font-family: 'Courier New', Courier, monospace; 
-    font-size: 1.1rem;
-    border: 2px solid #eee;
-    padding: 15px;
+    color: #d35400; /* Naranja de la tarea anterior */
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    border: 1px solid #eee;
 }
 
 .hijo-rebelde {
-    color: #2980b9; 
-    font-family: sans-serif;
-    font-weight: bold;
+    color: #2980b9; /* Azul */
+}
+
+/* =========================================
+   5. ALINEACIÓN AVANZADA (Tarea Actual)
+   ========================================= */
+.alignment-project {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #0056b3;
+}
+
+.box-container {
+    display: flex;
+    background-color: #f4f4f4;
+    height: 120px;
+    margin: 15px 0;
+    border: 1px dashed #bbb;
+}
+
+.item-align {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Casos específicos */
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.alignment-self {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.rebel {
+    background-color: #d35400; /* Naranja para que resalte el Align-self */
+    align-self: flex-end;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
 }
