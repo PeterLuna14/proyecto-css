@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto CSS - Herencia y Refactorización</title>
+    <title>Proyecto CSS - Pedro Luna</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,6 @@
     </header>
 
     <main class="container">
-        <h2>Ejemplos de Estilos</h2>
         <section class="cards-container">
             <div class="card">
                 <h3>Colores y Fondos</h3>
@@ -36,16 +35,30 @@
             </div>
         </section>
 
-        <hr> <section id="seccion-herencia">
+        <hr>
+
+        <section class="flexbox-demo">
+            <h2>Explorando Flexbox</h2>
+            <p>Control de alineación y distribución de espacios.</p>
+            <div class="flex-container">
+                <div class="flex-item">Caja 1</div>
+                <div class="flex-item">Caja 2</div>
+                <div class="flex-item">Caja 3</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="seccion-herencia">
             <h2>Demostración de Herencia en CSS</h2>
             <div class="contenedor-padre">
                 <h3>Soy el Elemento Padre</h3>
-                <p>Este párrafo <strong>no tiene estilos propios</strong> en el CSS. Está heredando el color y la fuente directamente de su padre.</p>
+                <p>Este párrafo <strong>no tiene estilos propios</strong>. Hereda el color y la fuente del padre.</p>
                 <ul>
                     <li>Hijo 1: Heredo el estilo naranja.</li>
                     <li>Hijo 2: Yo también lo heredo.</li>
                 </ul>
-                <p class="hijo-rebelde">Yo soy un hijo "rebelde": aunque mi padre es naranja, yo decidí ser azul usando mi propia clase.</p>
+                <p class="hijo-rebelde">Yo soy un hijo "rebelde": decidí ser azul usando mi propia clase.</p>
             </div>
         </section>
     </main>
